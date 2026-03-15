@@ -547,7 +547,7 @@ window.addEventListener('load',()=>{
                     {currentLab.hasTestbench && (
                         <div className="w-[40%] flex flex-col bg-[#070b14]/50 backdrop-blur-sm border-l border-white/[0.03]">
                             <div className="h-8 px-6 flex items-center border-b border-white/[0.03]">
-                                <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest">Simulation Stimulus</span>
+                                <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest">Mention $dumpfile("demo.vcd") for waveform</span>
                             </div>
                             <div className="flex-1">
                                 <Editor
