@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background: #ff7a00;
+    color: white;
+    padding: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 0 10px grey;
+}
+
+button {
+    background: #ff7a00;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout {
+    display: none;
+    background: white;
+    margin: 30px;
+    padding: 20px;
+}
+
+input,
+textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+}

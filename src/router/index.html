@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FruitFuel - Healthy Snacks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FruitFuel</h1>
+        <p>Healthy Dehydrated Fruit Snacks for Kids & Fitness Lovers</p>
+    </header>
+
+    <h2>Our Products</h2>
+
+    <section class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" width="200">
+            <h3>Chocolate Banana</h3>
+
+            <p><b>Nutrition:</b> Fiber, Potassium, Natural Energy</p>
+
+            <select id="bananaQty">
+                <option value="20">25g - ₹20</option>
+                <option value="40">50g - ₹40</option>
+            </select>
+
+            <button onclick="addCart('Chocolate Banana','bananaQty')">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518635017498-87f514b751ba" width="200">
+
+            <h3>Strawberry Chocolate</h3>
+
+            <p><b>Nutrition:</b> Vitamin C, Antioxidants</p>
+
+            <select id="strawQty">
+                <option value="20">25g - ₹20</option>
+                <option value="40">50g - ₹40</option>
+            </select>
+
+            <button onclick="addCart('Strawberry Chocolate','strawQty')">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e" width="200">
+
+            <h3>Banana Peanut Butter</h3>
+
+            <p><b>Nutrition:</b> Protein, Healthy Fats</p>
+
+            <select id="peanutQty">
+                <option value="20">25g - ₹20</option>
+                <option value="40">50g - ₹40</option>
+            </select>
+
+            <button onclick="addCart('Banana Peanut Butter','peanutQty')">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </section>
+
+    <h2>Kids Snack Pack</h2>
+
+    <section class="kids">
+
+        <p>Combo pack designed for children with mixed fruit snacks.</p>
+
+        <button onclick="addKidsPack()">Add Kids Pack ₹99</button>
+
+    </section>
+
+    <h2>Your Cart</h2>
+
+    <ul id="cart"></ul>
+
+    <p><b>Total: ₹<span id="total">0</span></b></p>
+
+    <button onclick="showCheckout()">Proceed to Checkout</button>
+
+
+    <div id="checkout" class="checkout">
+
+        <h2>Delivery Details</h2>
+
+        <input id="name" placeholder="Full Name">
+
+        <input id="email" placeholder="Email">
+
+        <input id="mobile" placeholder="Mobile Number">
+
+        <textarea id="address" placeholder="Address"></textarea>
+
+        <button onclick="payment()">Pay Now</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
