@@ -6,8 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      host: true,
-      allowedHosts: ['bitlab.utej.me']
       '/api': {
         target: 'http://18.210.22.125:8080',
         changeOrigin: true,
