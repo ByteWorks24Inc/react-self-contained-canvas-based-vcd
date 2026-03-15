@@ -5,6 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
+    host: true, // allow external access
+
+    allowedHosts: ['bitlab.utej.me'], // allow your domain
+
     proxy: {
       '/api': {
         target: 'http://18.210.22.125:8080',
