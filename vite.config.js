@@ -11,7 +11,7 @@ export default defineConfig({
 
     proxy: {
       '/api': {
-        target: 'https://3.131.146.52:8080',
+        target: 'https://bitlab.utej.me',
         changeOrigin: true,
       }
     }
