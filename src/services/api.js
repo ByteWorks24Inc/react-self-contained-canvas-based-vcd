@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://bitlab.utej.me/api',
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://bitlab.utej.me/api',
     headers: {
         'Content-Type': 'application/json',
     },
